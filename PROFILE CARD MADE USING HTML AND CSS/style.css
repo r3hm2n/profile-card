@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(113, 210, 248);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.image {
+    position: relative;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+.image .profile-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffff;
+
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    padding: 25px;
+    width: 100%;
+    background-color: #ffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    color: black;
+    position: relative;
+}
+
+.profile-card::before{
+    border-radius: 24px 24px 0 0 ;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(134, 10, 250);
+}
+
+
+.profile-card .text-data{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-data .name{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+
+}
+.text-data .job{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.media-buttons .link{
+    background-color: rgb(53, 0, 177);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 34px;
+    width:  34px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+
+.buttons .btn{
+    border-radius: 50px;
+    color: white;
+    font-weight: 300px;
+    border: none;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: rgb(75, 0, 160);
+    cursor: pointer;
+    transition: all 0.4 ease;
+}
+.buttons .btn:hover{
+    background-color: rgb(108, 8, 223);
+}
+
+.profile-card .analytis{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+ 
+}
+
+.analytis .number{
+    
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0 20px;
+    border-right: 2px solid rgb(194, 194, 194);
+}
+
+.number:last-child{
+    border-right: none;
+}
+
+.number i{
+font-size: 18px;
+margin-right: 8px;
+}
